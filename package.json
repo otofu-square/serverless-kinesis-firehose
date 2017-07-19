@@ -1,0 +1,7 @@
+{
+  "name": "serverless-firehose-athena",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "ssh://git@github.com/otofu-square/serverless-firehose-athena",
+  "license": "MIT"
+}
