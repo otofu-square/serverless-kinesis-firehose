@@ -3,5 +3,12 @@
   "version": "0.0.1",
   "main": "index.js",
   "repository": "ssh://git@github.com/otofu-square/serverless-firehose-athena",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/aws-lambda": "^0.0.15",
+    "@types/node": "^8.0.14",
+    "@types/ramda": "^0.24.4",
+    "aws-sdk": "^2.86.0",
+    "serverless-plugin-typescript": "0.5.0"
+  }
 }
