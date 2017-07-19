@@ -4,6 +4,14 @@ provider:
   name: aws
   runtime: nodejs6.10
   region: us-west-2
+  iamRoleStatements:
+  - Effect: Allow
+    Action:
+      - firehose:DeleteDeliveryStream
+      - firehose:PutRecord
+      - firehose:PutRecordBatch
+      - firehose:UpdateDestination
+    Resource: '*'
 
 package:
   exclude:
@@ -25,6 +33,8 @@ functions:
       - http:
           path: /webhook
           method: post
+
+resources: ${file(resources.yml)}
 
 plugins:
   - serverless-plugin-typescript
