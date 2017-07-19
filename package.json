@@ -10,5 +10,8 @@
     "@types/ramda": "^0.24.4",
     "aws-sdk": "^2.86.0",
     "serverless-plugin-typescript": "0.5.0"
+  },
+  "dependencies": {
+    "ramda": "^0.24.1"
   }
 }
