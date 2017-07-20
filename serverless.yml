@@ -1,4 +1,4 @@
-service: serverless-firehose-athena
+service: serverless-kinesis-firehose
 
 provider:
   name: aws

@@ -1,8 +1,8 @@
 {
-  "name": "serverless-firehose-athena",
+  "name": "serverless-kinesis-firehose",
   "version": "0.0.1",
   "main": "index.js",
-  "repository": "ssh://git@github.com/otofu-square/serverless-firehose-athena",
+  "repository": "ssh://git@github.com/otofu-square/serverless-kinesis-firehose",
   "license": "MIT",
   "devDependencies": {
     "@types/aws-lambda": "^0.0.15",

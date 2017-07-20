@@ -1,9 +1,9 @@
 ---
 Resources:
-  FirehosetoS3Role:
+  FirehoseToS3Role:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: FirehosetoS3Role
+      RoleName: FirehoseToS3Role
       AssumeRolePolicyDocument:
         Statement:
         - Effect: Allow
@@ -13,7 +13,7 @@ Resources:
           Action:
           - sts:AssumeRole
       Policies:
-      - PolicyName: FirehosetoS3Policy
+      - PolicyName: FirehoseToS3Policy
         PolicyDocument:
           Statement:
             - Effect: Allow
@@ -25,23 +25,23 @@ Resources:
               - s3:ListBucketMultipartUploads
               - s3:PutObject
               Resource: '*'
-  ServerlessFirehoseBucket:
+  ServerlessKinesisFirehoseBucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: ${env:STAGE}-serverless-firehose-athena-bucket
+      BucketName: ${env:STAGE}-serverless-kinesis-firehose-bucket
   ServerlessKinesisFirehose:
     Type: AWS::KinesisFirehose::DeliveryStream
     Properties:
-      DeliveryStreamName: ${env:STAGE}-serverless-firehose-athena
+      DeliveryStreamName: ${env:STAGE}-serverless-kinesis-firehose
       S3DestinationConfiguration:
         BucketARN:
           Fn::Join:
           - ''
           - - 'arn:aws:s3:::'
-            - Ref: ServerlessFirehoseBucket
+            - Ref: ServerlessKinesisFirehoseBucket
         BufferingHints:
           IntervalInSeconds: "60"
           SizeInMBs: "1"
         CompressionFormat: "UNCOMPRESSED"
         Prefix: "data"
-        RoleARN: { Fn::GetAtt: [ FirehosetoS3Role, Arn ] }
+        RoleARN: { Fn::GetAtt: [ FirehoseToS3Role, Arn ] }
