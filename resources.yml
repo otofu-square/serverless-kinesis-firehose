@@ -43,5 +43,5 @@ Resources:
           IntervalInSeconds: "60"
           SizeInMBs: "1"
         CompressionFormat: "UNCOMPRESSED"
-        Prefix: "data"
+        Prefix: "raw/"
         RoleARN: { Fn::GetAtt: [ FirehoseToS3Role, Arn ] }
