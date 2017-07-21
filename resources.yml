@@ -27,6 +27,7 @@ Resources:
               Resource: '*'
   ServerlessKinesisFirehoseBucket:
     Type: AWS::S3::Bucket
+    DeletionPolicy: Retain
     Properties:
       BucketName: ${env:STAGE}-serverless-kinesis-firehose-bucket
   ServerlessKinesisFirehose:
