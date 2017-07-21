@@ -1,7 +1,7 @@
 import { APIGatewayEvent, Callback, Context } from 'aws-lambda';
 import { Firehose } from 'aws-sdk';
 
-const DeliveryStreamName = `${process.env.STAGE}-serverless-firehose-athena`;
+const DeliveryStreamName = `${process.env.STAGE}-serverless-kinesis-firehose`;
 const firehose = new Firehose();
 
 export const execute = (
@@ -9,20 +9,20 @@ export const execute = (
   context: Context,
   callback: Callback,
 ) => {
-  console.log();
+  const json: any = JSON.parse(event.body as string);
   const params = {
     DeliveryStreamName,
     Record: {
-      Data: event.body as string,
+      Data: JSON.stringify(json.events[0]) + '\n',
     },
   };
   firehose.putRecord(params, (err, data) => {
     if (err) {
-      console.log(err, err.stack);
-      callback(undefined, { statusCode: 200, err });
+      console.log(JSON.stringify(err));
+      callback(undefined, { statusCode: 200, body: JSON.stringify(err) });
     } else {
-      console.log(data);
-      callback(undefined, { statusCode: 200, data });
+      console.log(JSON.stringify(data));
+      callback(undefined, { statusCode: 200, body: JSON.stringify(data) });
     }
   });
 };
