@@ -7,12 +7,12 @@
   resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-0.0.15.tgz#bf9c06edec330c54a85be0006c4c1686f5b62b59"
 
 "@types/node@^8.0.14":
-  version "8.0.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.14.tgz#4a19dc6bb61d16c01cbadc7b30ac23518fff176b"
+  version "8.0.31"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.31.tgz#d9af61093cf4bfc9f066ca34de0175012cfb0ce9"
 
 "@types/ramda@^0.24.4":
-  version "0.24.4"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.24.4.tgz#dff311f298d471f03c1dc11e52c2abecd14d5cc3"
+  version "0.24.14"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.24.14.tgz#bdd312c461934bc09a79745d77b6952302bf6b02"
 
 array-union@^1.0.1:
   version "1.0.2"
@@ -25,8 +25,8 @@ array-uniq@^1.0.1:
   resolved "https://registry.yarnpkg.com/array-uniq/-/array-uniq-1.0.3.tgz#af6ac877a25cc7f74e058894753858dfdb24fdb6"
 
 aws-sdk@^2.86.0:
-  version "2.86.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.86.0.tgz#f3a46f5d036ee598317d0d5a2a55c41d15da9f21"
+  version "2.122.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.122.0.tgz#d40980fdb24a07db166de91cb8813f0dc640d7c6"
   dependencies:
     buffer "4.9.1"
     crypto-browserify "1.0.9"
@@ -213,8 +213,8 @@ serverless-plugin-typescript@0.5.0:
     typescript "^2.2.2"
 
 typescript@^2.2.2:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.4.1.tgz#c3ccb16ddaa0b2314de031e7e6fee89e5ba346bc"
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.5.2.tgz#038a95f7d9bbb420b1bf35ba31d4c5c1dd3ffe34"
 
 url@0.10.3:
   version "0.10.3"
