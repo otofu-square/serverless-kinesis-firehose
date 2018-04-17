@@ -10,9 +10,9 @@
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-9.3.0.tgz#3a129cda7c4e5df2409702626892cb4b96546dd5"
 
-"@types/ramda@0.25.16":
-  version "0.25.16"
-  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.16.tgz#1d4eeb78d3247d1ceef971b458dd8469646cd1b4"
+"@types/ramda@0.25.23":
+  version "0.25.23"
+  resolved "https://registry.yarnpkg.com/@types/ramda/-/ramda-0.25.23.tgz#c8dded270401b31683820661feecbcff40412a90"
 
 array-union@^1.0.1:
   version "1.0.2"
