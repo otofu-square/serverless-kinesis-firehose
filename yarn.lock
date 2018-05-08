@@ -28,12 +28,13 @@ arrify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
 
-aws-sdk@2.188.0:
-  version "2.188.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.188.0.tgz#9062abc7dba6393459fa2f3423cf5d294f004611"
+aws-sdk@2.235.1:
+  version "2.235.1"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.235.1.tgz#b895da9482bb5d90b2f54c45203b7a3c1c2b7cea"
   dependencies:
     buffer "4.9.1"
-    events "^1.1.1"
+    events "1.1.1"
+    ieee754 "1.1.8"
     jmespath "0.15.0"
     querystring "0.2.0"
     sax "1.2.1"
@@ -47,8 +48,8 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
 
 base64-js@^1.0.2:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.2.1.tgz#a91947da1f4a516ea38e5b4ec0ec3773675e0886"
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.0.tgz#cab1e6118f051095e58b5281aea8c1cd22bfc0e3"
 
 brace-expansion@^1.1.7:
   version "1.1.8"
@@ -76,7 +77,7 @@ dir-glob@^2.0.0:
     arrify "^1.0.1"
     path-type "^3.0.0"
 
-events@^1.1.1:
+events@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
 
@@ -118,9 +119,13 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
 
-ieee754@^1.1.4:
+ieee754@1.1.8:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.8.tgz#be33d40ac10ef1926701f6f08a2d86fbfd1ad3e4"
+
+ieee754@^1.1.4:
+  version "1.1.11"
+  resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.1.11.tgz#c16384ffe00f5b7835824e67b6f2bd44a5229455"
 
 ignore@^3.3.5:
   version "3.3.7"
@@ -151,7 +156,11 @@ jsonfile@^4.0.0:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-lodash@^4.0.0, lodash@^4.17.4:
+lodash@^4.0.0:
+  version "4.17.10"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
+
+lodash@^4.17.4:
   version "4.17.4"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
 
