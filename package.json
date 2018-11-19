@@ -12,6 +12,6 @@
     "serverless-plugin-typescript": "1.1.5"
   },
   "dependencies": {
-    "ramda": "^0.25.0"
+    "ramda": "^0.26.0"
   }
 }
