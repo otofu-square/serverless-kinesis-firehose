@@ -5,7 +5,7 @@
   "repository": "ssh://git@github.com/otofu-square/serverless-kinesis-firehose",
   "license": "MIT",
   "devDependencies": {
-    "@types/aws-lambda": "0.0.30",
+    "@types/aws-lambda": "8.10.18",
     "@types/node": "9.3.0",
     "@types/ramda": "0.25.16",
     "aws-sdk": "2.188.0",
