@@ -6,7 +6,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/aws-lambda": "0.0.30",
-    "@types/node": "9.3.0",
+    "@types/node": "11.13.4",
     "@types/ramda": "0.25.16",
     "aws-sdk": "2.188.0",
     "serverless-plugin-typescript": "1.1.5"
