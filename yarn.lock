@@ -6,9 +6,9 @@
   version "0.0.30"
   resolved "https://registry.yarnpkg.com/@types/aws-lambda/-/aws-lambda-0.0.30.tgz#3944949f39453fd690bebf0b41a81ad031bb4af2"
 
-"@types/node@9.3.0":
-  version "9.3.0"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.3.0.tgz#3a129cda7c4e5df2409702626892cb4b96546dd5"
+"@types/node@12.0.1":
+  version "12.0.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.0.1.tgz#3dde31f8da274dfeb90e96abf55038fef46285f0"
 
 "@types/ramda@0.25.16":
   version "0.25.16"
